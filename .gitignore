@@ -1,0 +1,19 @@
+# --- dependencies (reinstallable, never committed) ---
+node_modules/
+package.json
+package-lock.json
+
+# --- build outputs (reproducible via scripts/build-zip.sh) ---
+dist/
+
+# --- local scratch (demo pages, generators, ad-hoc tests) ---
+tmp/
+
+# --- OS / editor noise ---
+.DS_Store
+Thumbs.db
+*.log
+.vscode/
+.idea/
+*.swp
+*~

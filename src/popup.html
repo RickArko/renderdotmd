@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main>
+      <h1>render.md</h1>
+      <p id="status" role="status">Checking this page…</p>
+
+      <label class="row">
+        <input type="checkbox" id="enabled" />
+        <span>Render Markdown automatically</span>
+      </label>
+
+      <label class="row">
+        <span>Theme</span>
+        <select id="theme">
+          <option value="auto">System</option>
+          <option value="light">Light</option>
+          <option value="dark">Dark</option>
+        </select>
+      </label>
+
+      <label class="row">
+        <span>Width</span>
+        <select id="width">
+          <option value="narrow">Narrow</option>
+          <option value="wide">Wide</option>
+        </select>
+      </label>
+
+      <div class="actions">
+        <button id="renderBtn" type="button">Render this page</button>
+        <button id="sourceBtn" type="button">Show source</button>
+      </div>
+
+      <details>
+        <summary>Preview pasted Markdown</summary>
+        <textarea id="paste" rows="5" placeholder="# Paste Markdown here…"></textarea>
+        <div id="preview"></div>
+      </details>
+
+      <p class="hint">
+        Local files need <b>Allow access to file URLs</b> enabled at
+        <code>brave://extensions</code> → render.md → Details.
+      </p>
+    </main>
+    <script src="markdown.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>

@@ -1,0 +1,4 @@
+# Normalize line endings (silences CRLF warnings); keep PNGs binary.
+* text=auto
+*.png binary
+*.zip binary
